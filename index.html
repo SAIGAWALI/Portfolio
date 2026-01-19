@@ -1,72 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Sanjay Gawali | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section id="intro">
-        <div class="intro-container">
-          <div class="intro-text">
-            <h1>Hello, I'm <span>Sai</span></h1>
-            <h2>Mechanical Engineering Student at IIT Gandhinagar</h2>
-            <p>
-              I am passionate about robotics, design, and competitive programming. I love working on challenging projects that push my knowledge boundaries.            </p>
-            <a href="#about" class="know-more-btn">Know More</a>
-          </div>
-          <div class="intro-image">
-            <img src="sai_image.jpg" >
-          </div>
-        </div>
-      </section>
-      
-      
-      
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
+<!-- INTRO -->
+<section id="intro">
+  <div class="intro-container">
+    <div class="intro-text">
+      <h1>Hello, I'm <span>Sai</span></h1>
+      <h2>B.Tech Mechanical Engineering @ IIT Gandhinagar (Minor in CSE)</h2>
       <p>
-        I am Sai, a passionate mechanical engineering Student from IIT Gandhinagar. My interests include robotics, design, elctronics and competative programming. I enjoy working on new projects that expand my knowledge and enhance my skill set.
+        I work on engineering problems that combine physical modeling,
+        simulation, and software systems. My interests include CFD,
+        control systems, and building full-stack applications to deploy
+        engineering solutions.
       </p>
-      <a href="Sai_GAWALI.pdf" download="Sai_Resume.pdf" class="btn">Download CV</a>
+      <a href="#about" class="know-more-btn">Know More</a>
     </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <h2>Projects I Did/ongoing</h2>
-      <div class="project-grid">
-        <div class="project-card" onclick="openLink('https://docs.google.com/document/d/1SVGiCZF5sFi15mUsjk9Hj2seiTi1fJ0WHpLFigvdtms/edit?usp=sharing')">
-          <h3>Drone Transformation(group project)</h3>
-          <p>Designed a drone that converts into a car using step motors and servo systems.</p>
-        </div>
-        <div class="project-card" onclick="openLink('https://drive.google.com/file/d/1Pwq4TGPLnRtrhDvJ4I_VQHunHo2ZeEFp/view?usp=sharing')">
-          <h3>Digital Doorlock System(group project)</h3>
-          <p>Developed a Door lock whic open by usnig online Application ,RFID card and Morse code.</p>
-        </div>
-        <div class="project-card" onclick="openLink('https://drive.google.com/your-drive-link')">
-          <h3>Unmanned Aerial Vehicle(group project,ongoing)</h3>
-          <p>This UAV will go underwater for survilliance</p>
-        </div>
-      </div>
+    <div class="intro-image">
+      <img src="sai_image.jpg" alt="Sai Sanjay Gawali">
     </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <h2>Competitions I participated/ongoing</h2>
-      <div class="project-grid">
-        <div class="project-card" onclick="openLink('https://drive.google.com/file/d/1j3d28wzG1g4AyOGzMkwAMuVTSuJ093EE/view')">
-          <h3>DD Robocon(Team Competition)</h3>
-          <p>The task of this Competition is to make two basketball playing robots. Our IITGN team RUDRA qualified the round 1</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I am a Mechanical Engineering undergraduate at IIT Gandhinagar with a
+      minor in Computer Science and Engineering. I have experience in CFD
+      simulations, experimental aerodynamics, control systems, machine learning, and full-stack
+      web development. I enjoy solving problems that require both engineering
+      fundamentals and strong software implementation.
+    </p>
+    <a href="Sai_GAWALI.pdf" download class="btn">Download CV</a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects I Did</h2>
+    <div class="project-grid">
+
+      <div class="project-card" onclick="openLink('https://saigawalihms.netlify.app/')">
+        <h3>Hospital Management System</h3>
+        <p>
+          Full-stack web application with role-based access, real-time
+          appointment booking, digital prescriptions, and admin controls.
+          Built using Node.js, Express, MySQL, and Socket.io.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Powered Lift Wing Design (STOL Aircraft)</h3>
+        <p>
+          CFD-based analysis of an externally blown flap wing with distributed
+          electric propulsion. Achieved stall suppression up to 45° AoA and
+          validated lift performance for STOL operation.
+        </p>
+      </div>
+
+      <div class="project-card" >
+        <h3>Shock Wave–Boundary Layer Interaction</h3>
+        <p>
+          Supersonic CFD study (Mach 4.5) analyzing heat transfer variation due
+          to surface protrusions. Conducted 32 RANS simulations using the
+          SST k–ω turbulence model.
+        </p>
+      </div>
+
+      <div class="project-card" onclick="openLink('https://github.com/SAIGAWALI/Metro-Journey-Planner/tree/main')">
+        <h3>Metro Journey Planner</h3>
+        <p>
+          Graph-based metro routing system using Dijkstra’s algorithm.
+          Supports time-efficient and distance-efficient routes with an
+          interactive Streamlit interface.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="projects">
+  <div class="container">
+    <h2>Leadership & Competitions</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>ABU Robocon 2025 – Team RUDRA</h3>
+        <p>
+          Co-Founder and Vice-Captain of IIT Gandhinagar’s Robocon team.
+          Qualified Round 1 with a score of 95/100.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+ <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
       <div class="contact-icons">
@@ -78,10 +121,10 @@
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Sai. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Sai Sanjay Gawali. All rights reserved.</p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
